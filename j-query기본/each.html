@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>each()</title>
+    <style>
+        .bg-0{background:#ff0;}
+        .bg-1{background:#f0f;}
+        .bg-2{background:#f00;}
+        .bg-3{background:#0f0;}
+        .bg-4{background:#0ff;}
+</style>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+    /*$(document).ready(function(){
+        $("h1").each(function(index,item){
+            $(this).addClass("bg-" + index);
+
+        });
+
+    });*/
+    $(document).ready(function(){
+        $("h1").addClass(function(index) {
+            return "bg-" + index;
+        });
+    });
+</script>
+<body>
+    <h1>header-01</h1>
+    <h1>header-02</h1>
+    <h1>header-03</h1>
+    <h1>header-04</h1>
+    <h1>header-05</h1>
+</body>
+</html>

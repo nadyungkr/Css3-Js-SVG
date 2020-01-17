@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("h1").filter(":odd").css({
+                backgroundColor:"#000",
+                color:"#fff"
+            });
+            /*$("h1:odd").css("background","000").css("color","fff");
+            $("h1:odd").css({
+                backgroundColor:"#000",
+                color:"#fff"            
+            });*/
+        });
+    </script>
+</head>
+<body>
+    <h1>header-1</h1>
+    <h1>header-2</h1>
+    <h1>header-3</h1>
+    <h1>header-4</h1>
+    <h1>header-5</h1>
+    <h1>header-6</h1>
+    <p>제이쿼리로 클래스를 선택하고 색깔을 입히는 방법은 아주 여러가지다</p>
+</body>
+</html>
