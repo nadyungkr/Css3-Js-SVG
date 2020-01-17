@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("h1").css("background","#ff0").filter(":even").css("color","red"); //even 홀수
+            //$("h1").css("background","#ff0");
+            //$("h1").css("color","red"); 로 쓸수도 있음 
+
+        });
+    </script>
+</head>
+<body>
+    <h1>header-1</h1>
+    <h1>header-2</h1>
+    <h1>header-3</h1>
+</body>
+</html>
