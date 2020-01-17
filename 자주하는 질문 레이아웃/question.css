@@ -1,5 +1,4 @@
-* {
-    margin:0;
+* {margin:0;
     padding:0;
   }
   html,body {
@@ -28,8 +27,7 @@
   a {
     display:block;
     height:48px;
-    line-height:23px;#ccc
-    background:linear-gradient(#eee, #ccc);
+    line-height:48px;
     color:#333;
     text-decoration:none;
     text-align:center;
@@ -47,12 +45,10 @@
     opacity:.9;
   }
   a:active {
-    background:linear-gradient(#ccc, #ddd);
     color:#000;
   }
   :target + p {
     padding:10px 15px;
-    border-bottom:1px solid #ccc;
   }
   #intro:target + p {
     height:70px;
