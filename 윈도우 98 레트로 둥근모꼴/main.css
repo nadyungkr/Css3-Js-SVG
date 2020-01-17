@@ -1,0 +1,20 @@
+@font-face { font-family: 'DungGeunMo';
+    font-weight: normal; 
+    font-style: normal;
+    src:url(font/DungGeunMo.woff) format('woff'),
+        url(font/DungGeunMo.woff2) format('woff2'),
+        url(font/DungGeunMo.ttf) format('truetype'),
+        url(font/DungGeunMo.eot) format('embedded-opentype');
+}
+
+body{
+    font-size:20px;
+    font-family:"DungGeunMo";
+    background:#000084;
+    color:#fff;
+    line-height:2;
+}
+
+h1{
+    font-size:80px;
+}
