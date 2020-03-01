@@ -1,0 +1,60 @@
+* {
+    padding:0;
+    margin:0;
+}
+
+body{
+    padding:30px;
+}
+
+li {
+    list-style: none;
+}
+
+.tab_type1 ul {
+    display:flex;
+    border-bottom:1px solid #5da62b;
+    height:60px;
+}
+
+.tab_type1 ul li{
+    flex:1;
+}
+
+.tab_type1 li:first-child a{
+    border-left:1px solid #ddd;
+}
+    /*tab 메뉴 비활성화 됐을 때*/
+.tab_type1 ul li a {
+    height:59px;
+    display:block;
+    border:1px solid #ddd;
+    border-left:none;
+    border-bottom:none;
+    font-size:14px;
+    color:#505050;
+    text-align:center;
+    line-height:59px;
+    text-decoration: none;
+}
+
+.tab_type1 ul li a.on {
+    position: relative;
+    height:58px; /*높이를 다시 지우는 이유는 ul의 border 위에 border를 흰색으로 덮어야 해서 높이를 다시 줘서 흰선이 보이게함*/
+    border-color:#5da62b;
+    border-top-width:2px;
+    line-height:57px; /*글씨를 클릭할때마다 border 때문에 움직이므로 줄간격으로 해소한다*/
+    border-bottom:1px solid #fff;
+}
+
+.tab_type1 ul li a.on:before{
+    content:"";
+    position:absolute;
+    left:-1px;
+    top:-2px;
+    width:1px;
+    height:100%;
+    background:#5da62b;
+    border-top:2px solid #5da62b;
+
+}
