@@ -1,0 +1,171 @@
+@charset "utf-8";
+body{
+    padding:50px;
+    box-sizing:border-box;
+    font-size:14px;
+}
+
+a.open{
+    display:block;
+    color:#fff;
+    text-align:center;
+    background:#de4f41;
+    width:170px;
+    height:50px;
+    line-height:50px;
+    border-radius:3px;
+    margin:200px auto 0;
+}
+
+.popup{
+    display:none;
+    position: fixed;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width:820px;
+    height:833px;
+    padding:52px 60px 60px;
+    box-sizing:border-box;
+    z-index:100;
+    background:#fff;
+}
+
+.popup h2{
+    padding:0 0 42px;
+    border-bottom:3px solid #444;
+    font-weight:normal;
+    font-size:36px;
+    color:#222;
+    text-align:center;
+    line-height:100%;
+}
+
+.popup .close{
+    position:absolute;
+    right:20px;
+    top:20px;
+    font-size:41px;
+}
+
+.popup .con{
+    padding:40px 68px;
+    border-bottom:1px solid #e8e8e8;
+}
+
+.agree{
+    margin:28px 0 0;
+    position: relative;
+    border:1px solid #e8e8e8;
+    padding:0 30px;
+    height:60px;
+    line-height:60px;
+}
+
+.agree label span{
+    color:#de4f41;
+}
+
+.agree .view{
+    font-size:14px;
+    position: absolute;
+    right:30px;
+    top:15px;
+    width:93px;
+    height:30px;
+    border:1px solid #ddd;
+    text-align:center;
+    line-height:30px;
+    border-radius:3px;
+}
+
+.dim{
+    display:none;
+    position: fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    z-index:99;
+}
+
+
+table.type1{
+    border-bottom:1px solid #e8e8e8;
+}
+
+table.type1 th, table.type1 td{
+    padding:0 0 20px;
+}
+
+table.type1 th{
+    padding-top:15px;
+    vertical-align: top;
+    font-size:14px;
+    color:#222;
+    text-align:left;
+    font-weight:normal;   
+}
+
+table.type1 th span{
+    color:#de4f41;
+}
+
+table.type1 th em{
+    color:#999;
+}
+
+table.type1 textarea{
+    height:116px;
+}
+
+table.type1 tr:last-child th,
+table.type1 tr:last-child td{
+    padding:0 0 30px;
+}
+
+input[type="checkbox"] {
+    position:absolute;
+    left:-3000%;
+}
+
+input[type="checkbox"] + label{
+    font-size:14px;
+    color:#666;
+}
+
+input[type="checkbox"] + label:before{
+    content:"";
+    display:inline-block;
+    width:20px;
+    height:20px;
+    border:1px solid #ddd;
+    margin:0 10px 0 0;
+    background:#f4f4f4;
+    vertical-align: middle;
+    box-sizing:border-box;
+    transition:all 0.3;
+}
+
+input[type="checkbox"]:checked + label:before{
+    border:7px solid #666;
+}
+
+.text_center{
+    text-align:center;
+    padding:30px 0 0;
+}
+
+.btn_type1 {
+    background:#de4f41;
+    width:170px;
+    height:50px;
+    line-height:50px;
+    color:#fff;
+    text-align:center;
+    display:inline-block;
+    border-radius:3px;
+}
+
+
