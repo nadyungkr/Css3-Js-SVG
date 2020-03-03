@@ -1,0 +1,138 @@
+@import url('path/to/xeicon/xeicon.min.css');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+
+a,i {
+    color:#fff;
+    text-decoration: none;
+}
+
+.heading {
+    position: relative;
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    margin: 0;
+    background: #e21e2f;
+    padding: 5px 20px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+div.gallery-wrap {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+div.gallery-wrap > div {
+    flex: 1;
+    height: 100%;
+    border-right: 10px solid #000;
+    transition: 0.8s;
+}
+div.gallery-wrap div:first-child {
+    border-left: none;
+}
+div.gallery-wrap div:last-child {
+    border-right: none;
+}
+
+div.gallery-wrap > div:nth-child(1) {
+    background: url(images/t1\ canna.jpg) no-repeat 40% center / cover;
+}
+div.gallery-wrap > div:nth-child(2) {
+    background: url(images/t1\ cuzz.jpg) no-repeat center center / cover;
+}
+div.gallery-wrap > div:nth-child(3) {
+    background: url(images/t1\ faker.jpg) no-repeat center center / cover;
+}
+div.gallery-wrap > div:nth-child(4) {
+    background: url(images/t1\ teddy.jpg) no-repeat center center / cover;
+}
+div.gallery-wrap > div:nth-child(5) {
+    background: url(images/t1\ effort.jpg) no-repeat center center / cover;
+}
+
+div.gallery-wrap:hover div {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+}
+div.gallery-wrap div:hover {
+    flex: 3;
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+}
+
+div.gallery-wrap div .content {
+    position: absolute;
+    width: 100%;
+    bottom: -100%;
+    left: 0;
+    background-color: black;
+    color: #fff;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: 0.5s;
+    padding: 30px;
+    box-sizing: border-box;
+    z-index: 1;
+    text-align: center;
+}
+div.gallery-wrap div .content:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.5) rotate(-5deg);
+    transform-origin: left top;
+    z-index: -1;
+}
+div.gallery-wrap div:hover .content {
+    bottom: 0;
+    transition-delay: 0.2s;
+    transition: 0.5s;
+    opacity: 1;
+}
+div.gallery-wrap div .content h2 {
+    border-bottom: 1px solid #363636;
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+}
+div.gallery-wrap div .content p {
+    width: 650px;
+    padding-left:50px;
+}
+
+.sns i{
+    cursor: pointer;
+    font-size: 26px;
+    transition: 0.2s;
+    margin: 2px;
+}
+.sns .fa:nth-child(1):hover { color: #3b5999; }
+.sns .fa:nth-child(2):hover { color: #e4405f; }
+.sns .fa:nth-child(3):hover { color: #0077B5; }
+.sns .fa:nth-child(4):hover { color: #dd4b39; }
+
+
+
+
+
