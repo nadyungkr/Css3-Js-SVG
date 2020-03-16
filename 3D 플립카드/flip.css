@@ -1,0 +1,57 @@
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:15px;
+}
+
+h1,h2{
+    text-align: center;
+}
+
+h2{
+    margin-bottom:50px;
+}
+
+.flip-container{
+    width:360px;
+    height:360px;
+    text-align: center;
+    margin:0 auto;
+    overflow: hidden;
+}
+
+.flip-inner{
+    position: relative;
+    width:100%;
+    height:100%;
+    transition: all .3s;
+    transform-style: preserve-3d;
+}
+
+.flip-container:hover .flip-inner{
+    transform: rotateY(180deg);
+}
+
+.flip-front,.flip-back{
+    position: absolute;
+    width:100%;
+    height:100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-front{
+    background:peachpuff;
+}
+
+.imagecard{
+    background:url(images/ndy.png) 50% 0 no-repeat;
+    background-size:contain;
+    width:430px;
+    height:430px;
+}
+
+.flip-back{
+    background:rgb(207, 140, 81);
+    color:#fff;
+    transform:rotateY(180deg);
+}
