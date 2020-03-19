@@ -1,0 +1,33 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+}
+  
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+  
+.tablink:hover {
+    background-color: #777;
+}
+
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+  
+#Home {background-color: rgb(160, 68, 68);}
+#About {background-color: rgb(64, 122, 64);}
+#Collect {background-color: rgb(66, 66, 128);}
+#Contact {background-color: rgb(148, 124, 79);}
