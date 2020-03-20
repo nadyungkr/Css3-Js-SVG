@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로딩화면을 만들고 넣어보기</title>
+    <link rel="stylesheet" href="loading.css">
+</head>
+<body onload="myFunction()">
+    <div id="loader"></div>
+    <main id="myDiv" class="animate-bottom">
+        <h2>로딩 완료!</h2>
+        <p>안녕하세요 페이지가 로딩이 완료 되었습니다</p>
+    </main>
+    <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 5000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
+</body>
+</html>
