@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parallax-scroll</title>
+    <link rel="stylesheet" href="normalize.min.css">
+    <style>
+        html,body{
+            width:100%;
+            height:100%;
+        }
+        html,body,div,h3,p,section{
+            padding:0; 
+            margin:0;
+        }
+        .bg-holder {
+            width: 100%;
+            height: 70%;
+        }
+        #pic1{
+            background: url('images/pic1_bigger.jpg') no-repeat;
+        }
+        #pic2{
+            background: url('images/pic2_bigger.jpg') no-repeat;
+        }
+        #pic3{
+            background: url('images/pic3_bigger.jpg') no-repeat;
+        }
+        .container{
+            text-align:center;
+            color:#fff;
+        }
+        .container h3{
+            font-size:40px;
+            padding-top:280px;
+        }
+        .container p{
+            padding:50px 0;
+            font-size:26px;
+        }
+        section{
+            margin:100px 0;
+        }
+        section h3, section p{
+            width:800px;
+            margin:50px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container bg-holder" id="pic1" data-width="1024" data-height="768">
+        <h3>parallax-scroll</h3>
+        <p>Start!</p>
+    </div>
+    <section>
+        <h3>Lorem Ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit. Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent. In hac habitasse platea dictumst quisque sagittis purus. Pulvinar elementum integer enim neque volutpat ac.
+        </p>
+        <p>Senectus et netus et malesuada. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Neque convallis a cras semper auctor. Libero id faucibus nisl tincidunt eget. Leo a diam sollicitudin tempor id. A lacus vestibulum sed arcu non odio euismod lacinia. In tellus integer feugiat scelerisque. Feugiat in fermentum posuere urna nec tincidunt praesent. Porttitor rhoncus dolor purus non enim praesent elementum facilisis. Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. Et malesuada fames ac turpis egestas sed. Sit amet nisl suscipit adipiscing bibendum est ultricies. Arcu ac tortor dignissim convallis aenean et tortor at. Pretium viverra suspendisse potenti nullam ac tortor vitae purus. Eros donec ac odio tempor orci dapibus ultrices. Elementum nibh tellus molestie nunc. Et magnis dis parturient montes nascetur. Est placerat in egestas erat imperdiet. Consequat interdum varius sit amet mattis vulputate enim.
+        </p>
+        <p>Sit amet nulla facilisi morbi tempus. Nulla facilisi cras fermentum odio eu. Etiam erat velit scelerisque in dictum non consectetur a erat. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Ut sem nulla pharetra diam. Fames ac turpis egestas maecenas. Bibendum neque egestas congue quisque egestas diam. Laoreet id donec ultrices tincidunt arcu non sodales neque. Eget felis eget nunc lobortis mattis aliquam faucibus purus. Faucibus interdum posuere lorem ipsum dolor sit.
+        </p>
+    </section>
+    <div class="container bg-holder" id="pic2" data-width="1024" data-height="768">
+        <h3>To sum up then</h3>
+    </div>
+    <section>
+        <h3>Lorem Ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit. Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent. In hac habitasse platea dictumst quisque sagittis purus. Pulvinar elementum integer enim neque volutpat ac.
+        </p>
+    </section>
+    <div class="container bg-holder" id="pic3" data-width="1024" data-height="768">
+        <h3>Thank you for watching</h3>
+        <p>bye bye</p>
+    </div>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/jquery.parallax-scroll.min.js"></script>
+    <script>
+        $(function(){
+            $('.bg-holder').parallaxScroll({
+                friction: 0.6
+            });
+        });
+    </script>
+</body>
+</html>
