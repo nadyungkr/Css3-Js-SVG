@@ -15,3 +15,5 @@
   * 페이지 로딩 (기본 W3CSCHOOL)
   * 회원가입 모달창 (구-SKT브로드밴드)
   * 반응형 웹 Nav (trigger-slideToggle과 a링크 기능-preventDefault)
+  * Cut in Half Text Snippet
+  * Colourful Swoosh Text Snippet
