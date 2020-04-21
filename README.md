@@ -24,4 +24,4 @@
   * Ripple Image Slider Snippet [출처](https://codemyui.com/)
   * Time Line Snippet [출처](https://codemyui.com/)
   * Click me Effect [출처](https://codemyui.com/)
-  
+  * Wave Lable Animation Snippet [출처](https://codmyui.com/)

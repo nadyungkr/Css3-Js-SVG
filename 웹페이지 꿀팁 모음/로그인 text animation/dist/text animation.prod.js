@@ -1,0 +1,1 @@
+"use strict";var inputs=document.querySelectorAll(".form-control input"),labels=document.querySelectorAll(".form-control label");labels.forEach(function(t){t.innerHTML=t.innerText.split("").map(function(t,n){return'<span style="\n\t\t\t\ttransition-delay: '.concat(50*n,'ms\n\t\t\t">').concat(t,"</span>")}).join("")});
