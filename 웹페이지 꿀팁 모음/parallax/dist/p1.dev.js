@@ -53,3 +53,13 @@ $(window).scroll(function () {
     nav.eq(5).addClass("active");
   }
 });
+$('.mNav').click(function () {
+  $('.menu').toggle();
+});
+$(window).resize(function () {
+  var wWidth = $(window).width();
+
+  if (wWidth > 800 && $('.menu').is(":hidden")) {
+    $('.menu').removeAttr("style");
+  }
+});
