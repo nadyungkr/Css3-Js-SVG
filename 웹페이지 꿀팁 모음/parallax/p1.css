@@ -15,9 +15,14 @@ a {
 #nav {
     position: fixed;
     left: 0;
-    top: 0;
+    top: -61px;
     width: 100%;
     background-color: rgba(255,255,255,.3);
+    transition: all .3s;
+}
+#nav.on {
+    position: fixed; 
+    top: 0;
 }
 #nav h1 {
     float:left;
