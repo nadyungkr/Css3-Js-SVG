@@ -98,3 +98,53 @@ a {text-decoration: none;}
 #section6 {
     background:radial-gradient(ellipse farthest-corner at center top, #FBB03B, #D4145A);
 }
+
+/*text animation*/
+#contents > div h2 {
+    transition: all .6s ease-in-out;
+}
+#section1 h2 {
+    opacity: 0;
+}
+#section2 h2 {
+    opacity: 0;
+}
+#section3 h2 {
+    opacity: 0;
+}
+#section4 h2 {
+    opacity: 0;
+}
+#section5 h2 {
+    opacity: 0;
+}
+#section6 h2 {
+    opacity: 0;
+}
+#contents > div.show h2{
+    transform: none;
+}
+#section1.show h2{
+    opacity: 1;
+    animation: bounceInRight 1s;
+}
+#section2.show h2{
+    opacity: 1;
+    animation: rubberBand 1s;
+}
+#section3.show h2{
+    opacity: 1;
+    animation: zoomInUp 1s;
+}
+#section4.show h2{
+    opacity: 1;
+    animation: flipInx 1s;
+}
+#section5.show h2{
+    opacity: 1;
+    animation: jello 1s;
+}
+#section6.show h2{
+    opacity: 1;
+    animation: rollin 1s;
+}

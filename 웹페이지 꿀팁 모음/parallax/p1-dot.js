@@ -38,4 +38,24 @@ $(window).scroll(function(){
         dot.removeClass("active");
         dot.eq(5).addClass("active");
     }
+    /*text animation*/
+    //offset top값보다 조금더 작은 값을 줘서 텍스트가 더 빨리보이게 하기
+    if(wScroll >= cont.eq(0).offset().top){
+        cont.eq(0).addClass("show");
+    }
+    if(wScroll >= cont.eq(1).offset().top - $(window).height()/3){
+        cont.eq(1).addClass("show");
+    }
+    if(wScroll >= cont.eq(2).offset().top - $(window).height()/3){
+        cont.eq(2).addClass("show");
+    }
+    if(wScroll >= cont.eq(3).offset().top - $(window).height()/3){
+        cont.eq(3).addClass("show");
+    }
+    if(wScroll >= cont.eq(4).offset().top - $(window).height()/3){
+        cont.eq(4).addClass("show");
+    }
+    if(wScroll >= cont.eq(5).offset().top - $(window).height()/3){
+        cont.eq(5).addClass("show");
+    } 
 });
