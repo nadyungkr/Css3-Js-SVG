@@ -30,24 +30,35 @@ a {text-decoration: none;}
     position: fixed; 
     right: 20px; 
     top:50%; 
-    transform: translatey(-50%);
-}
-#dot li a {
-    color: #fff; 
-    text-decoration: none; 
+    transform: translatey(-50%);}
+#dot li {
+    position: relative;
     width: 20px; 
-    height: 20px;
-    background:rgba(255,255,255,0.5); 
-    display: block; 
-    margin: 8px; 
+    height: 20px; 
+    border-radius:50%; 
+    box-shadow: 0 0 0 2px rgba(255,255,255,0);
+    margin: 8px;
+    transition: box-shadow 0.3s ease;
+}
+#dot li a { 
+    background-color: rgba(255,255,255,0.7);
+    width: 100%; 
+    height: 100%;
+    position: absolute; 
+    top:0; 
+    left: 0;
     border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+#dot li.active {
+    box-shadow: 0 0 0 2px rgba(255,255,255,1);
+}
+#dot li.active a {
+    transform: scale(0.4);
 }
 #dot li a em {
     display: none;
-}
-#dot li.active a {
-    background:rgba(255,255,255,1);
-}
+}   
 
 /* contents */
 #contents {
