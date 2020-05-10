@@ -127,6 +127,56 @@ a {
     background: radial-gradient(ellipse farthest-corner at center top, #6cebcf 0%, #38a7aa 100%);
 }
 
+/*text animation*/
+#contents > div h2 {
+    transition: all .6s ease-in-out;
+}
+#section1 h2 {
+    opacity: 0;
+    transform: translate(0, 0);
+}
+#section2 h2 {
+    opacity: 0;
+    transform: translate(0, -20%);
+}
+#section3 h2 {
+    opacity: 0;
+    transform: translate(-20%, 0);
+}
+#section4 h2 {
+    opacity: 0;
+    transform: translate(10%, 0);
+}
+#section5 h2 {
+    opacity: 0;
+    transform: rotate(45deg);
+}
+#section6 h2 {
+    opacity: 0;
+    transform: skew(90deg);
+}
+#contents > div.show h2{
+    transform: none;
+}
+#section1.show h2{
+    opacity: 1;
+}
+#section2.show h2{
+    opacity: 1;
+}
+#section3.show h2{
+    opacity: 1;
+}
+#section4.show h2{
+    opacity: 1;
+}
+#section5.show h2{
+    opacity: 1;
+}
+#section6.show h2{
+    opacity: 1;
+}
+
 @media (max-width: 800px){
     #nav .menu {
         display: none;
