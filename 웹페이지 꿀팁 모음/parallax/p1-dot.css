@@ -4,25 +4,78 @@ a {text-decoration: none;}
 
 /* nav */
 #nav {
-    position: fixed; 
+    position: fixed;
     left: 0;
-    top: 0px; 
-    width: 100%; 
-    height: 61px; 
-    z-index: 1000; 
-    background-color: rgba(255,255,255,0.3); 
-    transition: all 0.3s ease;
+    top: -61px;
+    width: 100%;
+    background-color: rgba(255,255,255,.3);
+    transition: all .3s;
 }
 #nav.on {
     position: fixed; 
-    top: -61px;
+    top: 0;
 }
 #nav h1 {
-    float: left; 
-    color: #fff; 
-    font-size: 40px; 
-    padding: 5px 5px 5px 15px; 
-    font-family: 'Abel' 
+    float:left;
+    color:#fff;
+    font-size:40px;
+    padding:5px 5px 5px 15px;
+    font-family: "Abel";
+}
+#nav ul {
+    float:right;
+    padding-right: 10px;
+}
+#nav ul li {
+    display: inline;
+}
+#nav ul li a {
+    display: inline-block;
+    padding: 20px 15px;
+    color: #fff;
+    font-weight: 800;
+    font-family: "Abel";
+    text-transform: capitalize;
+}
+#nav ul li.active a{
+    color:#000;
+}
+
+#nav .mNav{
+    display:none;
+    position: absolute;
+    top:7px;
+    right:10px;
+    width:65px;
+    height:45px;
+    cursor:pointer;
+}
+
+/*menu icon*/
+.icon-wrap {
+    padding-left:10px;
+}
+.icon-wrap .icon, .icon-wrap .icon:before, .icon-wrap .icon:after {
+    width:45px;
+    height:4px;
+    background: #fff;
+}
+.icon-wrap .icon {
+    position: relative;
+    margin-top:20px;
+}
+.icon-wrap .icon:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+
+}
+.icon-wrap .icon:after {
+    content: "";
+    position: absolute;
+    left:0;
+    top:10px;
 }
 
 /* dot */
@@ -147,4 +200,32 @@ a {text-decoration: none;}
 #section6.show h2{
     opacity: 1;
     animation: rollin 1s;
+}
+
+@media (max-width: 800px){
+    #nav .menu {
+        display: none;
+    }
+    #nav .mNav {
+        display: block;
+    }
+    #nav nav {
+        width: 100%;
+    }
+    #nav .menu {
+        float: none;
+        text-align: center;
+        padding-right: 0;
+    }
+    #nav .menu li {
+        width: 100%;
+        display: inline-block;
+    }
+    #nav .menu li.active {
+        background-color: rgba(255,255,255,.3);
+    }
+    #contents > div h2{
+        font-size: 6vw;
+        font-weight: 300;
+    }
 }
