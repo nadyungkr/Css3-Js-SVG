@@ -1,0 +1,75 @@
+body{
+    background: #ffdede;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.detail-container{
+    width: 100%;
+    min-height: 140vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+details{
+    padding: 0 2rem;
+    width: 80vw;
+    min-height: 10vh;
+    outline: 0;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+summary{
+    line-height: 10vh;
+    font-size: 4rem;
+}
+details p{
+    font-size: 1.2rem;
+}
+details > summary::-webkit-details-marker {
+    display: none;
+}
+.section1{
+    background: #dcdbf0;
+    background-image: radial-gradient(#fff 20%, transparent 0), radial-gradient(#fff 20%, transparent 0);
+    background-position: 0 0, 25px 25px;
+    background-size: 50px 50px;
+}
+.section2{
+    background:
+        linear-gradient(135deg, #ffe79f 25%, transparent 25%) -50px 0,
+        linear-gradient(225deg, #ffe79f 25%, transparent 25%) -50px 0,
+        linear-gradient(315deg, #ffe79f 25%, transparent 25%),
+        linear-gradient(45deg, #ffe79f 25%, transparent 25%);
+    background-size: 100px 100px;
+    background-color: #dab2f7;
+}
+.section3{
+    background:
+        radial-gradient(circle closest-side at 60% 43%, #dab2f7 26%, rgba(187,0,51,0) 27%),
+        radial-gradient(circle closest-side at 40% 43%, #dab2f7 26%, rgba(187,0,51,0) 27%),
+        radial-gradient(circle closest-side at 40% 22%, #fff 45%, rgba(221,51,85,0) 46%),
+        radial-gradient(circle closest-side at 60% 22%, #fff 45%, rgba(221,51,85,0) 46%),
+        radial-gradient(circle closest-side at 50% 35%, #fff 30%, rgba(221,51,85,0) 31%),
+
+        radial-gradient(circle closest-side at 60% 43%, #dab2f7 26%, rgba(187,0,51,0) 27%) 50px 50px,
+        radial-gradient(circle closest-side at 40% 43%, #dab2f7 26%, rgba(187,0,51,0) 27%) 50px 50px,
+        radial-gradient(circle closest-side at 40% 22%, #fff 45%, rgba(221,51,85,0) 46%) 50px 50px,
+        radial-gradient(circle closest-side at 60% 22%, #fff 45%, rgba(221,51,85,0) 46%) 50px 50px,
+        radial-gradient(circle closest-side at 50% 35%, #fff 30%, rgba(221,51,85,0) 31%) 50px 50px;
+    background-color:#dab2f7;
+    background-size:100px 100px;
+}
+.section4{
+    background-color: #fff; 
+    background-image: linear-gradient(#eee .1rem, transparent .1rem);
+    background-size: 100% 2rem;
+}
+.section5{
+    background: radial-gradient(circle closest-side at 50px 50px, #ffc2c2 18px, transparent 0), radial-gradient(circle closest-side at 62px 50px, #ffc2c2 18px, transparent 0), radial-gradient(circle closest-side at 67px 50px, #ffc2c2 18px, transparent 0), radial-gradient(circle closest-side at 123px 150px, #ffc2c2 18px, transparent 0), radial-gradient(circle closest-side at 140px 150px, #ffc2c2 18px, transparent 0), radial-gradient(circle closest-side at 145px 150px, #ffc2c2 18px, transparent 0), radial-gradient(circle at 68px 22px, #36964C 8px, transparent 0), radial-gradient(circle at 36px 25px, #F9D9AC 20px, transparent 0), radial-gradient(circle closest-side at 81px 25px, #F9D9AC 20px, transparent 0), radial-gradient(circle at 58px 30px, #286E38 15px, transparent 0), radial-gradient(circle at 142px 120px, #36964C 8px, transparent 0), radial-gradient(circle at 110px 125px, #F9D9AC 20px, transparent 0), radial-gradient(circle closest-side at 155px 125px, #F9D9AC 20px, transparent 0), radial-gradient(circle at 132px 130px, #286E38 15px, transparent 0);
+    background-color: #F9D9AC;
+    background-size: 180px 210px;
+}
